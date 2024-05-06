@@ -1,0 +1,39 @@
+$color-green: #4a611b;
+$color-brown: #925a42;
+$color-grey: #929598;
+$color-blue: #447091;
+$color-white: #D9D2C7;
+$color-black: black;
+
+:root {
+    --green: #{$green};
+    --brown: #{$brown};
+    --grey: #{$grey};
+    --blue: #{$blue};
+    --white: #{$white};
+    --black: #{$black};
+}
+
+
+$size: 1rem;
+
+
+/*@each $style, $weight, $suffix in $faces {
+    @font-face {
+        font-family: "Lato";
+        src: url("../fonts/lato-#{$suffix}.woff2") format("woff2"),
+        url("../fonts/lato-#{$suffix}.woff") format("woff");
+        font-style: $style;
+        font-weight: $weight;
+    }
+}*/
+
+body {
+    color: $grey;
+}
+
+h1 {
+    background-color: green;
+}
+
+
