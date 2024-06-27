@@ -1,39 +1,205 @@
 $color-green: #4a611b;
 $color-brown: #925a42;
 $color-grey: #929598;
+$color-greyp: #92959830;
 $color-blue: #447091;
 $color-white: #D9D2C7;
 $color-black: black;
 
 :root {
-    --green: #{$green};
-    --brown: #{$brown};
-    --grey: #{$grey};
-    --blue: #{$blue};
-    --white: #{$white};
-    --black: #{$black};
+    --green: #{$color-green};
+    --brown: #{$color-brown};
+    --grey: #{$color-grey};
+    --blue: #{$color-blue};
+    --white: #{$color-white};
+    --black: #{$color-black};
 }
 
+$mall: 360px;
+$medium: 768px;
+$large: 1024px;
 
-$size: 1rem;
-
-
-/*@each $style, $weight, $suffix in $faces {
     @font-face {
-        font-family: "Lato";
-        src: url("../fonts/lato-#{$suffix}.woff2") format("woff2"),
-        url("../fonts/lato-#{$suffix}.woff") format("woff");
-        font-style: $style;
-        font-weight: $weight;
+        font-family: "LatoBlack";
+        src: url("../fonts/lato-black-webfont.woff2") format("woff2"),
+        url("../fonts/lato-black-webfont.woff") format("woff");
     }
-}*/
 
-body {
-    color: $grey;
+    @font-face {
+        font-family: "LatoBold";
+        src: url("../fonts/lato-bold-webfont.woff2") format("woff2"),
+        url("../fonts/lato-bold-webfont.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "LatoRegular";
+        src: url("../fonts/lato-regular-webfont.woff2"),
+        url("../fonts/lato-regular-webfont.woff") format("woff");
+    }
+
+* {
+    margin: 0;
+}
+
+header {
+    background-color: $color-green;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    ul {
+        color: $color-grey;
+        display: flex;
+        gap: 3rem;
+        justify-content:flex-start;
+        list-style-type: none;
+        padding: 0.5rem 0 1rem 0;
+
+        li {
+            font-family: "LatoBold";
+
+            &:hover {
+                color: $color-white;
+            }   
+        }
+    }
 }
 
 h1 {
-    background-color: green;
+    font-family: "LatoBlack";
+    color: $color-white;
+    font-size: 3rem;
+    padding-top: 2rem;
 }
 
+h2 {
+    font-family: "LatoBold";
+    font-size: 2rem;
+}
 
+h3 {
+    font-family: "LatoBold";
+    font-size: 1.5rem;
+    }
+
+p, li {
+    font-family: "LatoRegular";
+}
+
+button {
+    background-color: transparent;
+    color: $color-white;
+    border-radius: 5rem;
+    border: none;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 2px 2px $color-greyp;
+
+    &:hover {
+        font-family: "LatoBold";
+        box-shadow: 2px 2px 2px 2px $color-grey;
+    }
+}
+
+section {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    h2 {
+        padding: 2rem 1rem 0 1rem;
+    }
+
+    h3 {
+        padding: 1rem 1rem 0rem 1rem;
+    }
+
+    p {
+        padding: 1rem 1rem;
+    }
+}
+
+#introduction {
+    
+    h3 {
+        color: $color-green;
+    }
+}
+
+#recette {
+
+    h3 {
+        color: $color-blue
+    }
+
+    .bloc {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 2rem;
+    
+        h2 {
+            padding-top: 0;
+        }
+    
+        img {
+            max-width: 100%;
+            object-fit: contain;
+            align-self: stretch;
+        }
+    
+        ul, ol {
+            padding:  1rem 2rem;
+    
+            & li {
+                padding: 0.2rem;
+            }
+        }
+
+        .bloc {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            gap: 2rem;
+
+            h2 {
+                padding-top: 0;
+            }
+
+            img {
+                max-width: 100%;
+                object-fit: contain;
+                align-self: stretch;
+            }
+
+            ul, ol {
+                padding:  1rem 2rem;
+
+                & li {
+                    padding: 0.2rem;
+                }
+            }
+        }
+    }
+
+}
+
+footer {
+    background-color: $color-green;
+
+    h3, p {
+        color: $color-white;
+        padding: 0.3rem 0;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+}
+
+.footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    }

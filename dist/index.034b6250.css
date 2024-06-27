@@ -1,2 +1,184 @@
+:root {
+  --green: #4a611b;
+  --brown: #925a42;
+  --grey: #929598;
+  --blue: #447091;
+  --white: #d9d2c7;
+  --black: black;
+}
 
+@font-face {
+  font-family: LatoBlack;
+  src: url("lato-black-webfont.48dd895e.woff2") format("woff2"), url("lato-black-webfont.4f5e722f.woff") format("woff");
+}
+
+@font-face {
+  font-family: LatoBold;
+  src: url("lato-bold-webfont.f30ccca6.woff2") format("woff2"), url("lato-bold-webfont.e6af954f.woff") format("woff");
+}
+
+@font-face {
+  font-family: LatoRegular;
+  src: url("lato-regular-webfont.c235425c.woff2"), url("lato-regular-webfont.9bd9f6ee.woff") format("woff");
+}
+
+* {
+  margin: 0;
+}
+
+header {
+  background-color: #4a611b;
+}
+
+.header {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header ul {
+  color: #929598;
+  justify-content: flex-start;
+  gap: 3rem;
+  padding: .5rem 0 1rem;
+  list-style-type: none;
+  display: flex;
+}
+
+.header ul li {
+  font-family: LatoBold;
+}
+
+.header ul li:hover {
+  color: #d9d2c7;
+}
+
+h1 {
+  color: #d9d2c7;
+  padding-top: 2rem;
+  font-family: LatoBlack;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: LatoBold;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: LatoBold;
+  font-size: 1.5rem;
+}
+
+p, li {
+  font-family: LatoRegular;
+}
+
+button {
+  color: #d9d2c7;
+  background-color: #0000;
+  border: none;
+  border-radius: 5rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  box-shadow: 2px 2px 2px 2px #92959830;
+}
+
+button:hover {
+  font-family: LatoBold;
+  box-shadow: 2px 2px 2px 2px #929598;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h2 {
+  padding: 2rem 1rem 0;
+}
+
+section h3 {
+  padding: 1rem 1rem 0;
+}
+
+section p {
+  padding: 1rem;
+}
+
+#introduction h3 {
+  color: #4a611b;
+}
+
+#recette h3 {
+  color: #447091;
+}
+
+#recette .bloc {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 2rem;
+  display: grid;
+}
+
+#recette .bloc h2 {
+  padding-top: 0;
+}
+
+#recette .bloc img {
+  object-fit: contain;
+  align-self: stretch;
+  max-width: 100%;
+}
+
+#recette .bloc ul, #recette .bloc ol {
+  padding: 1rem 2rem;
+}
+
+#recette .bloc ul li, #recette .bloc ol li {
+  padding: .2rem;
+}
+
+#recette .bloc .bloc {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 2rem;
+  display: grid;
+}
+
+#recette .bloc .bloc h2 {
+  padding-top: 0;
+}
+
+#recette .bloc .bloc img {
+  object-fit: contain;
+  align-self: stretch;
+  max-width: 100%;
+}
+
+#recette .bloc .bloc ul, #recette .bloc .bloc ol {
+  padding: 1rem 2rem;
+}
+
+#recette .bloc .bloc ul li, #recette .bloc .bloc ol li {
+  padding: .2rem;
+}
+
+footer {
+  background-color: #4a611b;
+}
+
+footer h3, footer p {
+  color: #d9d2c7;
+  padding: .3rem 0;
+}
+
+footer .italic {
+  font-style: italic;
+}
+
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
 /*# sourceMappingURL=index.034b6250.css.map */

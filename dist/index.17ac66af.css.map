@@ -1,0 +1,1 @@
+{"mappings":"AAEA;;;;AAIA","sources":["src/assets/sass/main.scss"],"sourcesContent":["/*@use \"_variables\" as var;*/\n\nbody {\n    margin: 0 auto;\n}\n\nh1 {\n    background-color: var(--green);\n}"],"names":[],"version":3,"file":"index.17ac66af.css.map","sourceRoot":"/__parcel_source_root/"}
